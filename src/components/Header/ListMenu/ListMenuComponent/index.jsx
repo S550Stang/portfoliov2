@@ -3,19 +3,17 @@ import React from "react";
 export default function ListMenuComponent() {
   return (
     <div className="hidden sm:inline-flex ">
-      <ul className=" flex text-white space-x-4 md:space-x-6 lg:space-x-9 xl:space-x-14 2xl:space-x-32 font-light text-xs xl:text-sm 2xl:text-lg">
-        <li>
-          <a className="hover:translate-y-12 hover:underline cursor-pointer">
-            Home
-          </a>
+      <ul className=" flex text-white space-x-4 md:space-x-6 lg:space-x-9 xl:space-x-24 2xl:space-x-32 font-light text-xs xl:text-lg 2xl:text-xl">
+        <li className="hover:scale-110 transition duration-300 ease-in-out hover:underline cursor-pointer">
+          <a>Home</a>
         </li>
-        <li>
+        <li className="hover:scale-110 transition duration-300 ease-in-out hover:underline cursor-pointer">
           <a>My Work</a>
         </li>
-        <li>
+        <li className="hover:scale-110 transition duration-300 ease-in-out hover:underline cursor-pointer">
           <a>Resume</a>
         </li>
-        <li>
+        <li className="hover:scale-110 transition duration-300 ease-in-out hover:underline cursor-pointer">
           <a>Contact Me</a>
         </li>
       </ul>

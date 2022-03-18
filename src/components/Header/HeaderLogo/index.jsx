@@ -7,7 +7,7 @@ export default function HeaderLogo() {
   const [boolean, setBoolean] = useState(false);
   return (
     <header className="flex justify-between items-center p-5 sm:px-10 sm:py-5 md:px-14 md:py-7 lg:px-20 lg:py-9 xl:px-24 xl:py-12 2xl:px-32 2xl:py-14">
-      <div>
+      <div className="hover:scale-110 transition duration-300 ease-in-out hover:underline cursor-pointer">
         <h1 className="text-xl xl:text-2xl 2xl:text-3xl font-Michroma  text-white">
           PPV
         </h1>
