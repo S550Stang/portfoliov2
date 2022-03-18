@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/S550Stang/portfoliov2/static/css/main.a69392b4.css",
-    "main.js": "/S550Stang/portfoliov2/static/js/main.e01be311.js",
-    "index.html": "/S550Stang/portfoliov2/index.html",
-    "main.a69392b4.css.map": "/S550Stang/portfoliov2/static/css/main.a69392b4.css.map",
-    "main.e01be311.js.map": "/S550Stang/portfoliov2/static/js/main.e01be311.js.map"
+    "main.css": "/portfoliov2/static/css/main.a69392b4.css",
+    "main.js": "/portfoliov2/static/js/main.e01be311.js",
+    "index.html": "/portfoliov2/index.html",
+    "main.a69392b4.css.map": "/portfoliov2/static/css/main.a69392b4.css.map",
+    "main.e01be311.js.map": "/portfoliov2/static/js/main.e01be311.js.map"
   },
   "entrypoints": [
     "static/css/main.a69392b4.css",
