@@ -1,16 +1,20 @@
 import { React, useState } from "react";
 import { motion } from "framer-motion";
 import HamburgerMenu from "../HamburgerMenu";
+import ListMenu from "../ListMenu";
 
 export default function HeaderLogo() {
   const [boolean, setBoolean] = useState(false);
   return (
-    <header className="flex justify-between items-center p-5">
+    <header className="flex justify-between items-center p-5 sm:px-10 sm:py-5 md:px-14 md:py-7 lg:px-20 lg:py-9 xl:px-24 xl:py-12 2xl:px-32 2xl:py-14">
       <div>
-        <h1 className="text-xl font-Michroma  text-white">PPV</h1>
+        <h1 className="text-xl xl:text-2xl 2xl:text-3xl font-Michroma  text-white">
+          PPV
+        </h1>
       </div>
       {/* HamBurger Menu*/}
       {boolean ? <HamburgerMenu /> : null}
+      <ListMenu />
       <motion.div
         className="cursor-pointer z-50 sm:hidden"
         onClick={() => setBoolean(!boolean)}
