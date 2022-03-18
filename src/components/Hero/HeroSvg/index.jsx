@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HeroSvg() {
   return (
-    <div className="max-w-sm mt-14 p-5">
+    <div className="max-w-sm mt-2 p-5">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         data-name="Layer 1"
