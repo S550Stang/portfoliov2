@@ -45,7 +45,7 @@ export default function ExperienceComponent() {
             {/** All Experience Components Here */}
             {/** Experience Component Here */}
             <div className="flex justify-center items-center font-Lato mb-10 2xl:w-96 ">
-              <div className=" w-52 h-44  sm:w-56 sm:h-56 md:w-64 xl:w-80 2xl:w-full 2xl:h-full rounded-3xl flex flex-col justify-center items-center   bg-[#3F37C9]   gap-3 sm:gap-5">
+              <div className=" w-52 h-44  sm:w-56 sm:h-56 md:w-64 xl:w-80 2xl:w-full 2xl:h-full rounded-3xl flex flex-col justify-center items-center   bg-[#3F37C9] border border-white    gap-3 sm:gap-5">
                 <AiFillSafetyCertificate className="headerTitle" />
                 <p className="text-[#f7f7f7]">Expereince</p>
                 <p className="text-[#f7f7f7] font-light">4+ Years</p>
@@ -53,7 +53,7 @@ export default function ExperienceComponent() {
             </div>
             {/** Project Component Here */}
             <div className="flex justify-center items-center font-Lato mb-10">
-              <div className=" w-52 h-44  sm:w-56 sm:h-56 md:w-64 xl:w-80 2xl:w-96 rounded-3xl flex flex-col justify-center items-center  bg-[#3F37C9]    gap-3 sm:gap-5">
+              <div className=" w-52 h-44  sm:w-56 sm:h-56 md:w-64 xl:w-80 2xl:w-96 rounded-3xl flex flex-col justify-center items-center  bg-[#3F37C9] border border-white     gap-3 sm:gap-5">
                 <AiFillProject className="headerTitle" />
                 <p className="text-[#f7f7f7]">Projects</p>
                 <p className="text-[#f7f7f7] font-light">10+ Projects</p>
@@ -61,7 +61,7 @@ export default function ExperienceComponent() {
             </div>
             {/** Certfications Component Here */}
             <div className="flex justify-center items-center font-Lato mb-10 lg:grid lg:col-span-2 ">
-              <div className=" w-52 h-44 sm:w-56 sm:h-56 md:w-64 lg:w-96 rounded-3xl flex flex-col justify-center items-center  bg-[#3F37C9]   gap-3 sm:gap-5 ">
+              <div className=" w-52 h-44 sm:w-56 sm:h-56 md:w-64 lg:w-96 rounded-3xl flex flex-col justify-center items-center  bg-[#3F37C9] border border-white    gap-3 sm:gap-5 ">
                 <AiOutlineSafetyCertificate className="headerTitle" />
                 <p className="text-[#f7f7f7]">Certifications</p>
                 <p className="text-[#f7f7f7] font-light">6+ Certifications</p>
