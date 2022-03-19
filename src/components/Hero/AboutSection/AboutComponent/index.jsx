@@ -1,42 +1,17 @@
 import React from "react";
 import Me from "../../../../assets/Me.jpg";
-import { motion } from "framer-motion";
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
 
 export default function AboutComponent() {
-  const { ref, inView } = useInView();
-  const animation = useAnimation();
-
-  useEffect(() => {
-    inView
-      ? animation.start({
-          x: 0,
-
-          transition: {
-            ease: "easeOut",
-            duration: 1,
-            type: "spring",
-            bounce: 0.3,
-          },
-        })
-      : animation.start({
-          x: "-900px",
-        });
-  }, [inView, animation]);
   return (
-    <div className="sm:mt-32 lg:mt-40 2xl:mt-60">
+    <div className="mt-10 sm:mt-32 lg:mt-40 2xl:mt-60">
       {/** About Header */}
-      <motion.div className="relative">
-        <motion.h1
-          ref={ref}
-          animate={animation}
+      <div className="relative">
+        <h1
           className="text-[#3F37C9] opacity-20 font-bold text-7xl sm:text-9xl
          md:text-[200px] lg:text-[250px] xl:text-[320px] 2xl:text-[400px]"
         >
           ABOUT
-        </motion.h1>
+        </h1>
         {/** This Will Be Flex Container */}
         <div className="relative left-0 right-0  -top-10 sm:-top-12 md:-top-16 2xl:-top-52 lg:flex lg:justify-between lg:items-center lg:px-20 lg:space-x-5 2xl:px-40  ">
           <img
@@ -56,7 +31,7 @@ export default function AboutComponent() {
             could raise back up stronger.
           </p>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 }

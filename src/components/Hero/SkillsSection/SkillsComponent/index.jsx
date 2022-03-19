@@ -1,135 +1,88 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
-import { TiTick } from "react-icons/ti";
 
 export default function SkillsComponent() {
-  const { ref, inView } = useInView();
-  const animation = useAnimation();
-
-  useEffect(() => {
-    inView
-      ? animation.start({
-          x: 0,
-
-          transition: {
-            ease: "easeOut",
-            duration: 1,
-            type: "spring",
-            bounce: 0.3,
-          },
-        })
-      : animation.start({
-          x: "-900px",
-        });
-  }, [inView, animation]);
   return (
-    <div className="mt-10 2xl:mt-0 mx-auto ">
-      {/** SKILLS SIDE TITLE */}
-      <motion.div className="relative">
-        <motion.h1
-          ref={ref}
-          animate={animation}
-          className="text-[#3F37C9] opacity-20 font-bold text-7xl sm:text-9xl
+    <div>
+      <h1
+        className="text-[#3F37C9] opacity-20 font-bold text-7xl sm:text-9xl
          md:text-[200px] lg:text-[250px] xl:text-[320px] 2xl:text-[400px] break-all"
-        >
-          SKILLS
-        </motion.h1>
-        <div className="relative grid grid-col-1 -top-20 sm:-top-28 md:-top-32 lg:-top-40 xl:-top-44 2xl:-top-60">
-          {/** First Grid */}
-          <div className="flex flex-col justify-center items-center">
-            <p className="text-lg 2xl:text-xl font-light text-white mt-10">
-              Front-End Development
-            </p>
-            <div className=" w-64 h-64 sm:w-72  2xl:w-[1000px]  rounded-3xl flex justify-center items-center bg-gradient-to-l from-[#3F37C9]  to-transparent bg-opacity-40  backdrop-blur-md   border border-white   mt-10 mb-10 lg:space-x-7 xl:space-x-10 2xl:space-x-40  ">
-              <div className="  flex flex-col justify-start items-start gap-5  text-white">
-                <p className=" flex items-center gap-1 mt-0 font-light text-sm 2xl:text-lg">
-                  <TiTick className="headerTitle" />
-                  HTML
-                </p>
-                <p className=" flex items-center gap-1 font-light text-sm 2xl:text-lg ">
-                  <TiTick className="headerTitle" />
-                  JAVASCRIPT
-                </p>
-                <p className=" flex items-center gap-1 font-light text-sm 2xl:text-lg">
-                  <TiTick className="headerTitle" />
-                  TAILWINDCSS
-                </p>
-                <p className=" flex items-center gap-1 font-light text-sm 2xl:text-lg">
-                  <TiTick className="headerTitle" />
-                  BOOTSTRAP
-                </p>
-              </div>
-              <div className="  flex flex-col justify-start items-start gap-5 px-3 text-white">
-                <p className=" flex items-center gap-1 font-light text-sm 2xl:text-lg">
-                  <TiTick className="headerTitle" />
-                  CSS
-                </p>
-                <p className=" flex items-center gap-1 font-light text-sm 2xl:text-lg">
-                  <TiTick className="headerTitle" />
-                  SASS/SCSS
-                </p>
-                <p className=" flex items-center gap-1 font-light text-sm 2xl:text-lg">
-                  <TiTick className="headerTitle" />
-                  REACT
-                </p>
-                <p className=" flex items-center gap-1 font-light text-sm 2xl:text-lg">
-                  <TiTick className="headerTitle" />
-                  BULMA
-                </p>
-              </div>
-            </div>
-          </div>
-          {/** Second Grid */}
-          <div className="flex flex-col justify-center items-center">
-            <div>
-              <p className="text-lg 2xl:text-xl font-light text-white mt-10">
-                Back-End Development
+      >
+        SKILLS
+      </h1>
+      <div className="relative -top-10 sm:-top-20 2xl:-top-32 md:-top-16 grid grid-cols-1 md:flex gap-y-4 sm:gap-y-8 text-white 2xl:px-20 ">
+        {/** Front - End Grid #1 */}
+        <div className="mx-auto bg-gradient-to-l from-[#3F37C9]  to-transparent bg-opacity-40  backdrop-blur-md border border-white rounded-3xl w-52 lg:w-72 xl:w-80 2xl:w-[700px] h-52 2xl:h-[400px] text-center  font-normal">
+          <p className="inline-block break-words text-sm 2xl:text-2xl  p-5">
+            FRONT-END
+          </p>
+          <div className="flex items-center justify-center gap-x-4  xl:gap-x-10">
+            <div className="flex flex-col text-left  gap-y-2 2xl:font-light">
+              <p className="inline-block break-words text-sm 2xl:text-2xl  ">
+                HTML
+              </p>
+              <p className="inline-block break-words text-sm 2xl:text-2xl">
+                JAVASCRIPT
+              </p>
+              <p className="inline-block break-words text-sm 2xl:text-2xl ">
+                TAILWINDCSS
+              </p>
+              <p className="inline-block break-words text-sm 2xl:text-2xl ">
+                BOOTSTRAP
               </p>
             </div>
-            <div className=" w-64 h-64 sm:w-72 2xl:w-[1000px] rounded-3xl flex justify-center items-center bg-gradient-to-r from-[#3F37C9]  to-transparent bg-opacity-40  backdrop-blur-md border border-white    mt-10 mb-10 lg:space-x-7 xl:space-x-10 2xl:space-x-40 ">
-              <div className="  flex flex-col justify-start items-start gap-5  px-3 text-white">
-                <p className=" flex items-center gap-1 mt-0 font-light text-sm 2xl:text-lg">
-                  <TiTick className="headerTitle" />
-                  NODEJS
-                </p>
-                <p className=" flex items-center gap-1 font-light text-sm 2xl:text-lg">
-                  <TiTick className="headerTitle" />
-                  EXPRESS
-                </p>
-                <p className=" flex items-center gap-1 font-light text-sm 2xl:text-lg">
-                  <TiTick className="headerTitle" />
-                  RUBY
-                </p>
-                <p className=" flex items-center gap-1 font-light text-sm 2xl:text-lg">
-                  <TiTick className="headerTitle" />
-                  PYTHON
-                </p>
-              </div>
-              <div className="  flex flex-col justify-start items-start gap-5 px-3 text-white">
-                <p className=" flex items-center gap-1 font-light text-sm 2xl:text-lg">
-                  <TiTick className="headerTitle" />
-                  POSTGRESQL
-                </p>
-                <p className=" flex items-center gap-1 font-light text-sm 2xl:text-lg">
-                  <TiTick className="headerTitle" />
-                  MYSQL
-                </p>
-                <p className=" flex items-center gap-1 font-light text-sm 2xl:text-lg">
-                  <TiTick className="headerTitle" />
-                  MONGOdb
-                </p>
-                <p className=" flex items-center gap-1 font-light text-sm 2xl:text-lg">
-                  <TiTick className="headerTitle" />
-                  REST-API'S
-                </p>
-              </div>
+            <div className="flex flex-col text-left gap-y-2 2xl:font-light">
+              <p className="inline-block break-words text-sm 2xl:text-2xl ">
+                CSS
+              </p>
+              <p className="inline-block break-words text-sm 2xl:text-2xl ">
+                REACTJS
+              </p>
+              <p className="inline-block break-words text-sm 2xl:text-2xl ">
+                NEXTJS
+              </p>
+              <p className="inline-block break-words text-sm 2xl:text-2xl ">
+                MATERIALUI
+              </p>
             </div>
           </div>
         </div>
-      </motion.div>
+        {/** Back - End Grid #2 */}
+        <div className="mx-auto bg-gradient-to-r from-[#3F37C9]  to-transparent bg-opacity-40  backdrop-blur-md border border-white rounded-3xl w-52 lg:w-72 xl:w-80 2xl:w-[700px] h-52 2xl:h-[400px] text-center">
+          <p className="inline-block break-words text-sm 2xl:text-2xl  p-5">
+            BACK-END
+          </p>
+          <div className="flex items-center justify-center gap-x-10 xl:gap-x-10">
+            <div className="flex flex-col text-left gap-y-2 2xl:font-light">
+              <p className="inline-block break-words text-sm 2xl:text-2xl ">
+                NODEJS
+              </p>
+              <p className="inline-block break-words text-sm 2xl:text-2xl ">
+                PYTHON
+              </p>
+              <p className="inline-block break-words text-sm 2xl:text-2xl ">
+                RUBY
+              </p>
+              <p className="inline-block break-words text-sm 2xl:text-2xl ">
+                EXPRESS
+              </p>
+            </div>
+            <div className="flex flex-col text-left gap-y-2 2xl:font-light">
+              <p className="inline-block break-words text-sm 2xl:text-2xl ">
+                MYSQL
+              </p>
+              <p className="inline-block break-words text-sm 2xl:text-2xl ">
+                POSTGRES
+              </p>
+              <p className="inline-block break-words text-sm 2xl:text-2xl ">
+                EJS
+              </p>
+              <p className="inline-block break-words text-sm 2xl:text-2xl ">
+                RESTful API
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
