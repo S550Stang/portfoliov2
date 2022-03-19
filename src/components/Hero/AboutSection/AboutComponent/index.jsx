@@ -29,14 +29,14 @@ export default function AboutComponent() {
     <div className="mt-10">
       {/** About Header */}
       <motion.div className="relative">
-        <h1
+        <motion.h1
           ref={ref}
           animate={animation}
           className="text-[#3F37C9] opacity-20 font-bold text-7xl sm:text-9xl
          md:text-[200px] lg:text-[250px] xl:text-[320px] 2xl:text-[400px]"
         >
           ABOUT
-        </h1>
+        </motion.h1>
         {/** This Will Be Flex Container */}
         <div className="absolute left-0 right-0 top-8 sm:top-12 md:top-16 2xl:top-28 lg:flex lg:justify-between lg:px-20 lg:space-x-5 2xl:px-28 w-screen ">
           <img
