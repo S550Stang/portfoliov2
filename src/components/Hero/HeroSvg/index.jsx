@@ -4,7 +4,7 @@ export default function HeroSvg() {
   return (
     <div className="relative flex justify-end items-center">
       <svg
-        className="static sm:absolute w-52 lg:w-72 xl:w-80 2xl:w-[800px] -z-10"
+        className="static sm:absolute w-52 lg:w-72 xl:w-80 2xl:w-[700px] -z-10"
         xmlns="http://www.w3.org/2000/svg"
         data-name="Layer 1"
         viewBox="0 0 885.58745 762.89248"

@@ -37,13 +37,13 @@ export default function SkillsComponent() {
         >
           SKILLS
         </motion.h1>
-        <div className="relative grid grid-col-1 -top-20 sm:-top-28 md:-top-32 lg:-top-40 xl:-top-44 2xl:-top-52">
+        <div className="relative grid grid-col-1 -top-20 sm:-top-28 md:-top-32 lg:-top-40 xl:-top-44 2xl:-top-60">
           {/** First Grid */}
           <div className="flex flex-col justify-center items-center">
             <p className="text-lg 2xl:text-xl font-light text-white mt-10">
               Front-End Development
             </p>
-            <div className=" w-64 h-64 sm:w-72  2xl:w-[1000px]  rounded-3xl flex justify-center items-center font-Lato  bg-[#3F37C9] border border-white   mt-10 mb-10 lg:space-x-7 xl:space-x-10 2xl:space-x-40  ">
+            <div className=" w-64 h-64 sm:w-72  2xl:w-[1000px]  rounded-3xl flex justify-center items-center bg-gradient-to-l from-[#3F37C9]  to-transparent bg-opacity-40  backdrop-blur-md   border border-white   mt-10 mb-10 lg:space-x-7 xl:space-x-10 2xl:space-x-40  ">
               <div className="  flex flex-col justify-start items-start gap-5  text-white">
                 <p className=" flex items-center gap-1 mt-0 font-light text-sm 2xl:text-lg">
                   <TiTick className="headerTitle" />
@@ -89,7 +89,7 @@ export default function SkillsComponent() {
                 Back-End Development
               </p>
             </div>
-            <div className=" w-64 h-64 sm:w-72 2xl:w-[1000px] rounded-3xl flex justify-center items-center   bg-[#3F37C9] border border-white    mt-10 mb-10 lg:space-x-7 xl:space-x-10 2xl:space-x-40 ">
+            <div className=" w-64 h-64 sm:w-72 2xl:w-[1000px] rounded-3xl flex justify-center items-center bg-gradient-to-r from-[#3F37C9]  to-transparent bg-opacity-40  backdrop-blur-md border border-white    mt-10 mb-10 lg:space-x-7 xl:space-x-10 2xl:space-x-40 ">
               <div className="  flex flex-col justify-start items-start gap-5  px-3 text-white">
                 <p className=" flex items-center gap-1 mt-0 font-light text-sm 2xl:text-lg">
                   <TiTick className="headerTitle" />
