@@ -2,14 +2,14 @@ import React from "react";
 
 export default function HeroSvg() {
   return (
-    <div className=" mt-10 relative -top-10 xl:-top-44 flex justify-end items-center">
+    <div className="flex justify-end items-center">
       <svg
-        className="max-w-md"
+        className="w-44 mt-12 sm:w-52 sm:mt-6 md:w-60 md:mt-4 lg:w-72 xl:w-80 2xl:w-96 overflow-hidden"
         xmlns="http://www.w3.org/2000/svg"
         data-name="Layer 1"
         viewBox="0 0 885.58745 762.89248"
       >
-        <title>mello</title>
+        <title>MarshMellow</title>
         <path
           d="M376.948,313.57787S282.23242,346.2,264.06779,376.31267,376.948,313.57787,376.948,313.57787Z"
           transform="translate(-157.20627 -68.55376)"
