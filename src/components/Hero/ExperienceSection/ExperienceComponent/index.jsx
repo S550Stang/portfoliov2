@@ -24,7 +24,7 @@ export default function ExperienceComponent() {
           },
         })
       : animation.start({
-          x: "-100vw",
+          x: "-900px",
         });
   }, [inView, animation]);
   return (
