@@ -38,7 +38,7 @@ export default function AboutComponent() {
           ABOUT
         </motion.h1>
         {/** This Will Be Flex Container */}
-        <div className="absolute left-0 right-0 top-8 sm:top-12 md:top-16 2xl:top-28 lg:flex lg:justify-between lg:px-20 lg:space-x-5 2xl:px-28 w-screen ">
+        <div className="relative left-0 right-0 -top-10 sm:-top-12 md:-top-16 2xl:-top-28 lg:flex lg:justify-between lg:px-20 lg:space-x-5 2xl:px-28 w-screen ">
           <img
             className=" rounded-3xl mx-auto w-44 sm:w-52 md:w-60 lg:w-64 xl:w-80 2xl:w-2/3 lg:object-left-top lg:object-cover hover:scale-110 transition duration-300 ease-in-out"
             src={Me}
