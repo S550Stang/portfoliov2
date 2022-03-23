@@ -16,7 +16,7 @@ export default function ProjectsPage3() {
       <motion.h1
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 0.5 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 1 }}
         className="text-[#3F37C9] opacity-20 font-bold text-7xl sm:text-9xl
      md:text-[200px] lg:text-[250px] xl:text-[320px] 2xl:text-[400px] break-all"
       >
