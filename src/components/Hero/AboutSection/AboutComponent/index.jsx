@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Me from "../../../../assets/Me.jpg";
 
 export default function AboutComponent() {
@@ -6,12 +7,15 @@ export default function AboutComponent() {
     <div className="mt-10 sm:mt-32 lg:mt-40 2xl:mt-60">
       {/** About Header */}
       <div className="relative">
-        <h1
+        <motion.h1
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 0.5 }}
+          transition={{ duration: 2 }}
           className="text-[#3F37C9] opacity-20 font-bold text-7xl sm:text-9xl
          md:text-[200px] lg:text-[250px] xl:text-[320px] 2xl:text-[400px]"
         >
           ABOUT
-        </h1>
+        </motion.h1>
         {/** This Will Be Flex Container */}
         <div className="relative left-0 right-0  -top-10 sm:-top-12 md:-top-16 2xl:-top-52 lg:flex lg:justify-between lg:items-center lg:px-20 lg:space-x-5 2xl:px-40  ">
           <img

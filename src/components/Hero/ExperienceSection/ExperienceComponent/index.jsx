@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { AiFillSafetyCertificate } from "react-icons/ai";
 import { AiFillProject } from "react-icons/ai";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
@@ -6,12 +7,15 @@ import { AiOutlineSafetyCertificate } from "react-icons/ai";
 export default function ExperienceComponent() {
   return (
     <div>
-      <h1
+      <motion.h1
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 0.5 }}
+        transition={{ duration: 2 }}
         className="text-[#3F37C9] opacity-20 font-bold text-7xl sm:text-9xl
          md:text-[200px] lg:text-[250px] xl:text-[320px] 2xl:text-[400px] break-all"
       >
         EXPERIENCE
-      </h1>
+      </motion.h1>
       {/** This Will Be Flex Container */}
       <div className="relative left-0 right-0 -top-20 sm:-top-44 md:-top-60 lg:-top-60 xl:-top-60 2xl:-top-[600px] lg:flex lg:justify-between lg:px-20 lg:space-x-5 2xl:px-28 ">
         <div className="lg:grid lg:grid-cols-2 gap-10 xl:gap-20 2xl:space-x-54 mx-auto px-2 ">
