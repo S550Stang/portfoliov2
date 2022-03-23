@@ -3,6 +3,9 @@ import HeroTitle from "./HeroTitle";
 import AboutSection from "./AboutSection";
 import ExperienceSection from "./ExperienceSection";
 import SkillsSection from "./SkillsSection";
+import ProjectsSection from "./ProjectsSection";
+import ProjectsPage2 from "./ProjectsPage2";
+import ProjectsPage3 from "./ProjectsPage3";
 
 export default function HeroComponent() {
   return (
@@ -11,6 +14,9 @@ export default function HeroComponent() {
       <AboutSection />
       <ExperienceSection />
       <SkillsSection />
+      <ProjectsSection />
+      <ProjectsPage2 />
+      <ProjectsPage3 />
     </div>
   );
 }
