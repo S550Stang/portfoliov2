@@ -31,15 +31,6 @@ export default function Socials() {
       }}
     >
       <SoundBarComponent />
-      <a href="https://www.instagram.com/prabhu.vardhan.pilli/">
-        <AiOutlineInstagram className="mt-3 cursor-pointer text-white  hover:text-[#3F37C9] text-sm md:text-2xl 2xl:text-4xl" />
-      </a>
-      <a href="https://github.com/S550Stang">
-        <AiOutlineGithub className="cursor-pointer text-white hover:text-[#3F37C9] text-sm md:text-2xl 2xl:text-4xl" />
-      </a>
-      <a href="https://www.linkedin.com/in/prabhuvardhanraopilli/">
-        <AiOutlineLinkedin className="cursor-pointer text-white hover:text-[#3F37C9] text-sm md:text-2xl 2xl:text-4xl" />
-      </a>
     </motion.div>
   );
 }
