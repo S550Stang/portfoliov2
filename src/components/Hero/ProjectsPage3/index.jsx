@@ -22,7 +22,7 @@ export default function ProjectsPage3() {
       >
         PROJECTS
       </motion.h1>
-      <div className="relative -top-10 md:-top-44 sm:-top-20 xl:-top-44 2xl:-top-[600px]  grid grid-cols-1 gap-y-4 sm:gap-y-8   text-white 2xl:px-20 ">
+      <div className="relative -top-10 md:-top-44 sm:-top-20 xl:-top-64 2xl:-top-[600px]  grid grid-cols-1 gap-y-4 sm:gap-y-8   text-white 2xl:px-20 ">
         {/** Front - End Grid #1 */}
         <div className="mx-auto bg-gradient-to-l from-[#3F37C9]  to-transparent bg-opacity-40  backdrop-blur-md  border border-[#3F37C9] rounded-3xl w-52 md:w-96 lg:w-4/5 xl:w-5/6 2xl:w-5/6 h-52 2xl:h-[400px] px-3 lg:px-0 flex overflow-hidden  font-normal">
           <div className="flex flex-col text-left justify-center items-start gap-y-3 2xl:gap-y-6 lg:px-5">
