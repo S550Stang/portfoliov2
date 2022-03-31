@@ -17,7 +17,7 @@ export default function ExperienceComponent() {
         EXPERIENCE
       </motion.h1>
       {/** This Will Be Flex Container */}
-      <div className="relative left-0 right-0 -top-20 sm:-top-44 md:-top-60 lg:-top-60 xl:-top-96 2xl:-top-[700px] lg:flex lg:justify-between lg:px-20 lg:space-x-5 2xl:px-28 ">
+      <div className="relative left-0 right-0 -top-20 sm:-top-44 md:-top-60 lg:-top-60 xl:-top-80 2xl:-top-[600px] lg:flex lg:justify-between lg:px-20 lg:space-x-5 2xl:px-28 ">
         <div className="lg:grid lg:grid-cols-2 gap-10 xl:gap-20 2xl:space-x-54 mx-auto px-2 ">
           {/** All Experience Components Here */}
           {/** Experience Component Here */}
