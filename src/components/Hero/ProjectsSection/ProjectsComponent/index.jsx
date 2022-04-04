@@ -27,7 +27,14 @@ export default function ProjectsComponent() {
               Its a simple Loadash library clone built with just javascript
             </p>
             <button className="bg-[#3F37C9] text-xs sm:text-sm xl:text-lg 2xl:text-xl  text-white cursor-pointer rounded-full px-5 py-1 hover:scale-110 transition duration-300 ease-in-out flex items-center  ">
-              Github <FiGithub className="ml-2" />
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/S550Stang/lotide"
+              >
+                Github
+              </a>{" "}
+              <FiGithub className="ml-2" />
             </button>
           </div>
           <div className="flex flex-col items-center justify-end p-1 ">
