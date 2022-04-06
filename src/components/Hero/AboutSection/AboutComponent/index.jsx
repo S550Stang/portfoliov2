@@ -1,16 +1,36 @@
-import React from "react";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
 import Me from "../../../../assets/Me.jpg";
 
 export default function AboutComponent() {
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+
+  useEffect(() => {
+    inView
+      ? animation.start({
+          x: 0,
+
+          transition: {
+            ease: "easeOut",
+            duration: 1,
+            type: "spring",
+            bounce: 0.3,
+          },
+        })
+      : animation.start({
+          x: -300,
+        });
+  }, [inView, animation]);
   return (
     <div className="mt-10 sm:mt-32 lg:mt-40 2xl:mt-60">
       {/** About Header */}
-      <div className="relative">
+      <motion.div className="relative">
         <motion.h1
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 0.5 }}
-          transition={{ duration: 2 }}
+          ref={ref}
+          animate={animation}
           className="text-[#3F37C9] opacity-20 font-bold text-7xl sm:text-9xl
          md:text-[200px] lg:text-[250px] xl:text-[320px] 2xl:text-[400px]"
         >
@@ -35,7 +55,7 @@ export default function AboutComponent() {
             could raise back up stronger.
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

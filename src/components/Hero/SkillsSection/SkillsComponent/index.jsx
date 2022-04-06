@@ -1,13 +1,33 @@
-import React from "react";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
 
 export default function SkillsComponent() {
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+
+  useEffect(() => {
+    inView
+      ? animation.start({
+          x: 0,
+
+          transition: {
+            ease: "easeOut",
+            duration: 1,
+            type: "spring",
+            bounce: 0.3,
+          },
+        })
+      : animation.start({
+          x: -300,
+        });
+  }, [inView, animation]);
   return (
-    <div className="sm:-mt-10 md:-mt-24 xl:-mt-60 2xl:-mt-60">
+    <motion.div className="sm:-mt-10 md:-mt-24 xl:-mt-60 2xl:-mt-60">
       <motion.h1
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 0.5 }}
-        transition={{ duration: 2 }}
+        ref={ref}
+        animate={animation}
         className="text-[#3F37C9] opacity-20 font-bold text-7xl sm:text-9xl
          md:text-[200px] lg:text-[250px] xl:text-[320px] 2xl:text-[400px] break-all"
       >
@@ -87,6 +107,6 @@ export default function SkillsComponent() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -1,16 +1,36 @@
-import React from "react";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
 import { DiJavascript1, DiCss3Full, DiHtml5, DiReact } from "react-icons/di";
 import { FiGithub } from "react-icons/fi";
 import { SiTailwindcss, SiExpress } from "react-icons/si";
 
 export default function ProjectsComponent() {
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+
+  useEffect(() => {
+    inView
+      ? animation.start({
+          x: 0,
+
+          transition: {
+            ease: "easeOut",
+            duration: 1,
+            type: "spring",
+            bounce: 0.3,
+          },
+        })
+      : animation.start({
+          x: -300,
+        });
+  }, [inView, animation]);
   return (
-    <div className="">
+    <motion.div className="">
       <motion.h1
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 0.5 }}
-        transition={{ duration: 1 }}
+        ref={ref}
+        animate={animation}
         className="text-[#3F37C9] opacity-20 font-bold text-7xl sm:text-9xl
      md:text-[200px] lg:text-[250px] xl:text-[320px] 2xl:text-[400px] break-all"
       >
@@ -68,6 +88,6 @@ export default function ProjectsComponent() {
           <div className="hidden lg:inline-flex w-2/3 xl:w-96 2xl:w-[800px] h-full bg-[#3F37C9] opacity-20"></div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

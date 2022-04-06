@@ -1,5 +1,7 @@
-import React from "react";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
 import {
   DiJavascript1,
   DiCss3Full,
@@ -11,12 +13,30 @@ import { FiGithub } from "react-icons/fi";
 import { SiRubyonrails } from "react-icons/si";
 
 export default function ProjectsPage3() {
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+
+  useEffect(() => {
+    inView
+      ? animation.start({
+          x: 0,
+
+          transition: {
+            ease: "easeOut",
+            duration: 1,
+            type: "spring",
+            bounce: 0.3,
+          },
+        })
+      : animation.start({
+          x: -300,
+        });
+  }, [inView, animation]);
   return (
-    <div className="sm:-mt-10 md:-mt-32 2xl:-mt-96">
+    <motion.div className="sm:-mt-10 md:-mt-32 2xl:-mt-96">
       <motion.h1
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 0.5 }}
-        transition={{ duration: 1 }}
+        ref={ref}
+        animate={animation}
         className="text-[#3F37C9] opacity-20 font-bold text-7xl sm:text-9xl
      md:text-[200px] lg:text-[250px] xl:text-[320px] 2xl:text-[400px] break-all"
       >
@@ -66,6 +86,6 @@ export default function ProjectsPage3() {
           <div className="hidden lg:inline-flex w-2/3 xl:w-96 2xl:w-[800px] h-full bg-[#3F37C9] opacity-20"></div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
