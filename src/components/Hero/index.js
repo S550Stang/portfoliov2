@@ -7,6 +7,7 @@ import ProjectsSection from "./ProjectsSection";
 import ProjectsPage2 from "./ProjectsPage2";
 import ProjectsPage3 from "./ProjectsPage3";
 import Socials from "./Socials";
+import ContactSection from "./ContactSection";
 
 export default function HeroComponent() {
   return (
@@ -19,6 +20,7 @@ export default function HeroComponent() {
       <ProjectsSection />
       <ProjectsPage2 />
       <ProjectsPage3 />
+      <ContactSection />
     </div>
   );
 }
