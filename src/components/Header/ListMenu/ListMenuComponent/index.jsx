@@ -1,4 +1,5 @@
 import React from "react";
+import CV from "../../../../assets/Prabhu.DOCX";
 
 export default function ListMenuComponent() {
   return (
@@ -8,16 +9,18 @@ export default function ListMenuComponent() {
       2xl:text-[20px] "
       >
         <li className="hover:scale-110 transition duration-300 ease-in-out hover:underline cursor-pointer">
-          <a>Home</a>
+          <a href="#Home">Home</a>
         </li>
         <li className="hover:scale-110 transition duration-300 ease-in-out hover:underline cursor-pointer">
-          <a>My Work</a>
+          <a href="#Projects">My Work</a>
         </li>
         <li className="hover:scale-110 transition duration-300 ease-in-out hover:underline cursor-pointer">
-          <a>Resume</a>
+          <a href={CV} download>
+            Resume
+          </a>
         </li>
         <li className="hover:scale-110 transition duration-300 ease-in-out hover:underline cursor-pointer">
-          <a>Contact Me</a>
+          <a href="#Contact">Contact Me</a>
         </li>
       </ul>
     </div>

@@ -5,6 +5,8 @@ import { useAnimation } from "framer-motion";
 import { DiJavascript1, DiCss3Full, DiHtml5, DiReact } from "react-icons/di";
 import { FiGithub } from "react-icons/fi";
 import { SiTailwindcss, SiExpress } from "react-icons/si";
+import Mmemoirs from "../../../../assets/Mmemoirs.png";
+import Lotide from "../../../../assets/Lotide.png";
 
 export default function ProjectsComponent() {
   const { ref, inView } = useInView();
@@ -27,7 +29,7 @@ export default function ProjectsComponent() {
         });
   }, [inView, animation]);
   return (
-    <motion.div className="">
+    <motion.div id="Projects">
       <motion.h1
         ref={ref}
         animate={animation}
@@ -60,7 +62,9 @@ export default function ProjectsComponent() {
           <div className="flex flex-col items-center justify-end p-1 ">
             <DiJavascript1 className="text-4xl 2xl:text-5xl text-[#3F37C9]" />
           </div>
-          <div className="hidden lg:inline-flex w-2/3 xl:w-96 2xl:w-[800px] h-full bg-[#3F37C9] opacity-20"></div>
+          <div className="hidden lg:inline-flex w-2/3 xl:w-96 2xl:w-[800px] h-full bg-[#3F37C9] ">
+            <img className="w-full" src={Lotide} alt="Loadash" />
+          </div>
         </div>
         {/** Back - End Grid #2 */}
         <div className="mx-auto bg-gradient-to-r from-[#3F37C9]  to-transparent bg-opacity-40  backdrop-blur-md  border border-[#3F37C9] rounded-3xl w-52 md:w-96 lg:w-4/5 xl:w-5/6 2xl:w-5/6 h-52 2xl:h-[400px] px-3 lg:px-0 flex lg:flex-row-reverse  overflow-hidden  font-normal">
@@ -73,7 +77,14 @@ export default function ProjectsComponent() {
                 A Full-Stack image uploading app created with React
               </p>
               <button className="bg-[#3F37C9] text-xs sm:text-sm xl:text-lg 2xl:text-xl  text-white cursor-pointer rounded-full px-5 py-1 hover:scale-110 transition duration-300 ease-in-out flex items-center  ">
-                Github <FiGithub className="ml-2" />
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/S550Stang/Memoirs-Final-Project"
+                >
+                  Github
+                </a>{" "}
+                <FiGithub className="ml-2" />
               </button>
             </div>
             <div className="flex flex-col items-center justify-end p-1 2xl:p-2 ">
@@ -85,7 +96,10 @@ export default function ProjectsComponent() {
               <DiJavascript1 className="text-4xl 2xl:text-5xl text-[#3F37C9]" />
             </div>
           </div>
-          <div className="hidden lg:inline-flex w-2/3 xl:w-96 2xl:w-[800px] h-full bg-[#3F37C9] opacity-20"></div>
+          {/**Place Image here */}
+          <div className="hidden lg:inline-flex w-2/3 xl:w-96 2xl:w-[800px] h-full bg-[#3F37C9] ">
+            <img className="w-full" src={Mmemoirs} alt="memoirs picture" />
+          </div>
         </div>
       </div>
     </motion.div>

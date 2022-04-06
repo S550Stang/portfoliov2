@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import CV from "../../../assets/Prabhu.DOCX";
 
 export default function HamburgerMenu() {
   return (
@@ -19,17 +20,17 @@ export default function HamburgerMenu() {
     >
       <ul className="flex flex-col justify-between items-center text-md font-normal text-white  gap-6 mt-44">
         <li>
-          <a href="#AboutMe" className="cursor-pointer">
+          <a href="#Home" className="cursor-pointer">
             Home
           </a>
         </li>
         <li>
-          <a href="#Skills" className="cursor-pointer ">
+          <a href="#Projects" className="cursor-pointer ">
             My Work
           </a>
         </li>
         <li>
-          <a href="#Projects" className="cursor-pointer ">
+          <a href={CV} download className="cursor-pointer ">
             Resume
           </a>
         </li>

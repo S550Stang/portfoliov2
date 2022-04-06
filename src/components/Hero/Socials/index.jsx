@@ -6,9 +6,7 @@ import SoundBarComponent from "../SoundBarComponent";
 export default function Socials() {
   return (
     <motion.div
-      className="flex flex-col items-center gap-3
-      fixed z-50  left-2 top-14 2xl:left-5 
-      "
+      className="ml-2"
       animate={{
         x: 0,
         opacity: 1,

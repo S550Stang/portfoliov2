@@ -10,6 +10,7 @@ import {
 } from "react-icons/di";
 import { FiGithub } from "react-icons/fi";
 import { SiExpress } from "react-icons/si";
+import Password from "../../../assets/Password.png";
 
 export default function ProjectsPage2() {
   const { ref, inView } = useInView();
@@ -53,7 +54,14 @@ export default function ProjectsPage2() {
               nodejs, ejs
             </p>
             <button className="bg-[#3F37C9] text-xs sm:text-sm xl:text-lg 2xl:text-xl  text-white cursor-pointer rounded-full px-5 py-1 hover:scale-110 transition duration-300 ease-in-out flex items-center  ">
-              Github <FiGithub className="ml-2" />
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/S550Stang/tweeterr"
+              >
+                Github
+              </a>{" "}
+              <FiGithub className="ml-2" />
             </button>
           </div>
           <div className="flex flex-col items-center justify-end p-1 ">
@@ -77,7 +85,14 @@ export default function ProjectsPage2() {
                 bcrypt.
               </p>
               <button className="bg-[#3F37C9] text-xs sm:text-sm xl:text-lg 2xl:text-xl  text-white cursor-pointer rounded-full px-5 py-1 hover:scale-110 transition duration-300 ease-in-out flex items-center  ">
-                Github <FiGithub className="ml-2" />
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/valik94/PasswordKeeper"
+                >
+                  Github
+                </a>{" "}
+                <FiGithub className="ml-2" />
               </button>
             </div>
             <div className="flex flex-col items-center justify-end p-1 2xl:p-2 ">
@@ -87,7 +102,14 @@ export default function ProjectsPage2() {
               <DiJavascript1 className="text-4xl 2xl:text-5xl text-[#3F37C9]" />
             </div>
           </div>
-          <div className="hidden lg:inline-flex w-2/3 xl:w-96 2xl:w-[800px] h-full bg-[#3F37C9] opacity-20"></div>
+          {/** Image Goes Here */}
+          <div className="hidden lg:inline-flex w-2/3 xl:w-96 2xl:w-[800px] h-full bg-[#3F37C9] ">
+            <img
+              className="w-full object-cover"
+              src={Password}
+              alt="password keeper"
+            />
+          </div>
         </div>
       </div>
     </motion.div>

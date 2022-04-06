@@ -7,7 +7,7 @@ import ContactHeaderTitle from "../ContactHeaderTitle";
 
 export default function ContactComponent() {
   return (
-    <div className="xl:-mt-96">
+    <div id="Contact" className="xl:-mt-96">
       <ContactHeaderTitle />
       <div className="relative -top-10 md:-top-44 sm:-top-20 xl:-top-72 2xl:-top-[600px]   flex flex-col justify-center items-center lg:flex-row">
         <div className="flex flex-col justify-center items-center ">
