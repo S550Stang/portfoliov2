@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import CV from "../../../assets/Prabhu.DOCX";
+import CV from "../../../assets/Prabhu_Resume.docx";
 
 export default function HamburgerMenu() {
   return (

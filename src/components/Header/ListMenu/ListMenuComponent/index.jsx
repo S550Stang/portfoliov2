@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../../../../assets/Prabhu.DOCX";
+import CV from "../../../../assets/Prabhu_Resume.docx";
 
 export default function ListMenuComponent() {
   return (
